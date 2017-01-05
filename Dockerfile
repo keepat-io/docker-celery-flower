@@ -9,7 +9,7 @@ RUN pip install celery=="4.0.2"
 RUN pip install redis=="2.10.5"
 RUN pip install flower=="0.9.1"
 
-COPY celeryconfig.py celeryconfig.py
+COPY flowerconfig.py flowerconfig.py
 
 USER celery
 CMD ["celery", "flower"]
