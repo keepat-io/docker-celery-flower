@@ -1,5 +1,5 @@
 # Download base image python:3.5
-FROM python:3.5
+FROM python:3.5-slim
 MAINTAINER Udlei Nati <udlei@protonmail.ch>
 
 RUN groupadd celery && useradd --shell /bin/bash --create-home --home-dir /home/celery -g celery celery
